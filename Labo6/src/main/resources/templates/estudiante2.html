@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Mostrar estudiante por llave primaria</title>
+</head>
+<body>
+	
+	<label>Estudiante con codigo relacionado</label><label th:text="${estudiante.nombre}"></label>
+	<table>
+		<thead>
+			<tr>
+				<th>Id_computadora</th>
+				<th>Marca</th>
+			</tr>
+		</thead>
+		<tbody>
+			  <tr th:each="comp : ${estudiante.computadoras}">
+				<td th:text="${comp.codigoComputadora}"></td>
+				<td th:text="${comp.marca}"></td>
+			</tr>
+		</tbody>	
+	</table>
+</body>
+</html>

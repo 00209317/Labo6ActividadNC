@@ -104,5 +104,21 @@ public class MainController {
 		mav.setViewName("agregarEstudiante");
 		return mav;
 	}
+	
+	/*@RequestMapping("/main2")
+	public ModelAndView main2() {
+		ModelAndView mav = new ModelAndView();
+		mav.setViewName("main2");
+		return mav;
+	}*/
+	
+	@RequestMapping(value = "/mostrarEstudiante2", method = RequestMethod.POST)
+	public ModelAndView findOne2(@RequestParam(value="codigo") int id) {
+		ModelAndView mav = new ModelAndView();
+		Estudiante estudiante = estudianteService.findOne(id);
+		mav.addObject("estudiante", estudiante);
+		mav.setViewName("estudiante2");
+		return mav;
+	}
 
 }

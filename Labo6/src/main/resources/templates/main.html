@@ -36,5 +36,10 @@
 		<input type="number" name = "codigo"><br>
 		<input type="submit" value = "Borrar">	
 	</form>
+	<form th:action="@{/mostrarEstudiante2}" method="post">
+		<label>Buscar por codigo de estudiante Relacionado</label>
+		<input type="number" name="codigo"><br>
+		 <input type="submit" value="Buscar">
+	</form>
 </body>
 </html>

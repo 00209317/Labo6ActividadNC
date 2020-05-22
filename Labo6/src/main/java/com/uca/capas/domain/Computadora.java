@@ -17,7 +17,7 @@ public class Computadora {
 	private Integer codigoComputadora;
 	
 	@Column(name="marca")
-	private Integer marca;
+	private String marca;
 	
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name="id_estudiante")
@@ -31,11 +31,11 @@ public class Computadora {
 		this.codigoComputadora = codigoComputadora;
 	}
 
-	public Integer getMarca() {
+	public String getMarca() {
 		return marca;
 	}
 
-	public void setMarca(Integer marca) {
+	public void setMarca(String marca) {
 		this.marca = marca;
 	}
 

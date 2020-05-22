@@ -76,7 +76,13 @@ public class Estudiante {
 	public void setEstado(Boolean estado) {
 		this.estado = estado;
 	}
-
+	
+	public List<Computadora> getComputadoras() {
+		return computadoras;
+	}
+	public void setComputadoras(List<Computadora> computadoras) {
+		this.computadoras = computadoras;
+	}
 	public Estudiante() {
 		
 	}	

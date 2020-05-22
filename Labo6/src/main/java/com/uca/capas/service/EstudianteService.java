@@ -8,7 +8,7 @@ import com.uca.capas.domain.Estudiante;
 
 public interface EstudianteService {
 
-public List<Estudiante> findAll() throws DataAccessException;
+	public List<Estudiante> findAll() throws DataAccessException;
 	
 	public Estudiante findOne(Integer code) throws DataAccessException;
 	
