@@ -41,5 +41,11 @@
 		<input type="number" name="codigo"><br>
 		 <input type="submit" value="Buscar">
 	</form>
+	
+	<form th:action="@{/filtrar}" method="post">
+		<label>Ingrese la cadena por la que desea filtrar</label>
+		<input type="text" name="nombre"><br>
+		<input type="submit" value="Filtrar">
+	</form>
 </body>
 </html>
