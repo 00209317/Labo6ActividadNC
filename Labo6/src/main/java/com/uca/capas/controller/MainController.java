@@ -55,7 +55,7 @@ public class MainController {
 			System.out.println("me vine para aca pq no busque");
 		}
 		mav.addObject("estudiante", estudiante);
-		mav.setViewName("estudiante");
+		mav.setViewName("Updateestudiante");
 		return mav;
 	}
 	
